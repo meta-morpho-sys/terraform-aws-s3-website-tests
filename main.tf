@@ -1,5 +1,6 @@
 provider "aws" {
-  region = "us-east-2"
+  shared_config_files      = ["/Users/yuliya.nedyalkova/.aws/config"]
+  shared_credentials_files = ["/Users/yuliya.nedyalkova/.aws/credentials"]
 }
 
 resource "aws_s3_bucket" "s3_bucket" {
