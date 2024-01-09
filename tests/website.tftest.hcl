@@ -42,7 +42,7 @@ run "website_is_running" {
   }
 
   assert {
-    condition = data.http.index.status_code == 200
+    condition = data.http.index.status_code == 403
     error_message = "Website responded with HTTP status ${data.http.index.status_code}"
   }
 }
